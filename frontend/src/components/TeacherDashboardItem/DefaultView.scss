@@ -1,0 +1,33 @@
+@import '../../assets/scss/variables';
+
+.dashboard-small-card-layout {
+  width: 100%;
+  min-height: 213px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+
+  .title-font-settings {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .center-position {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .check-icon-settings {
+      margin: 20px 0;
+    }
+    .content-settings {
+      width: 100%;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      line-height: 15px;
+    }
+  }
+}

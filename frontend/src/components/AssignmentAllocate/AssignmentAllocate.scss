@@ -1,0 +1,24 @@
+@import '../../assets/scss/variables';
+
+#root {
+  .assignmentallocate-tab {
+    .ant-row-space-between {
+      align-items: center;
+      margin-bottom: 24px;
+      .ant-row-space-between {
+        align-items: center;
+        margin-bottom: 0px;
+      }
+    }
+    &-header {
+      font-size: 16px;
+      font-weight: 400;
+      display: flex;
+      flex: 0 1 auto;
+      h2 {
+        font-size: 18px;
+        border-radius: 2px;
+      }
+    }
+  }
+}

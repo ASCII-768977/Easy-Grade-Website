@@ -1,0 +1,13 @@
+@import 'variables';
+#root {
+  .abbv-date {
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: $gray-7;
+  }
+  .txt-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

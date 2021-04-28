@@ -1,0 +1,26 @@
+@import 'variables';
+
+#root {
+  .ant-collapse {
+    border: none;
+    &-item {
+      border: none;
+      &:last-child {
+        border-bottom: 1px solid $gray-border;
+      }
+    }
+    &-content {
+      background-color: $white-pure;
+      border: none;
+    }
+    &-header {
+      font-size: 14px;
+      font-weight: 500;
+      color: $blue-primary;
+      background-color: $white-pure;
+      border: 1px solid $gray-border;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}

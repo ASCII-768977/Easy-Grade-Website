@@ -1,0 +1,38 @@
+.ant-modal-content {
+  border-radius: 8px !important;
+  .ant-modal-body {
+    padding: 0px !important;
+    .modal-header {
+      height: 8vh !important;
+      background-color: #ccdef4;
+      border-radius: 8px 8px 0 0;
+      .modal-header-icon {
+        float: right;
+        width: 120px;
+        margin-top: 25px;
+        margin-right: 35px;
+      }
+    }
+    #modal-body,
+    .modal-body {
+      padding: 29px 48px;
+      font-size: 24px;
+      min-height: 56vh !important;
+
+      #modal-body-title {
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.ant-modal-mask {
+  background-color: rgba(44, 83, 130, 0.4) !important;
+}
+
+.ant-modal {
+  width: 850px !important;
+  height: 70%;
+  vertical-align: middle !important;
+}

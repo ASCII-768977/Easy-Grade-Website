@@ -1,0 +1,55 @@
+#root {
+  .assignment--body {
+    width: 100%;
+    vertical-align: middle;
+    line-height: 55px;
+    .assignment--body__header {
+      border-bottom: 1px solid #d9d9d9;
+      font-size: 15px;
+      font-weight: 500;
+      span:nth-child(2) {
+        float: right;
+        margin-right: 20px;
+      }
+      td:nth-child(1) {
+        width: 30%;
+      }
+      td:nth-child(3),
+      td:nth-child(4) {
+        text-align: center;
+      }
+    }
+    .assignment-body__content {
+      border-bottom: 1px solid #d9d9d9;
+      font-size: 14px;
+      font-weight: 400;
+      span:nth-child(2) {
+        float: right;
+        margin-right: 20px;
+      }
+      .progress,
+      #progress {
+        padding-right: 20px;
+        vertical-align: middle !important;
+        &__date {
+          line-height: 20px;
+          font-size: 14px;
+          font-weight: 500;
+          display: flex;
+          justify-content: space-between;
+        }
+        &__bar {
+          line-height: 0;
+        }
+      }
+      .assignment-submission,
+      .assignment-score {
+        text-align: center;
+      }
+
+      .ant-progress-bg {
+        height: 10px !important;
+      }
+    }
+  }
+}

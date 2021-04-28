@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'media-queries';
+
+.sign-in-layout {
+  height: 100%;
+  min-height: 720px;
+  display: flex;
+
+  &__left {
+    width: 100%;
+    flex: 2;
+  }
+
+  &__right {
+    width: 100%;
+    flex: 0;
+    background-color: grey;
+  }
+}
+
+#root .site-layout {
+  width: calc(100% - 240px);
+  padding: 12px 24px 24px 24px;
+  margin-left: 240px;
+  background-color: $white-bg;
+  min-height: 100vh;
+  transition: margin-left 0.15s ease, width 0.15s ease;
+
+  &-collapsed {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+  }
+  .ant-breadcrumb {
+    margin-bottom: 8px;
+  }
+  .ant-breadcrumb a:hover {
+    color: $blue-primary;
+  }
+  @include MQ(LG) {
+    min-width: 752px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 960px;
+  @media screen and (min-width: $LG) {
+    width: 960px;
+  }
+  @media screen and (min-width: $XL) {
+    width: 100%;
+    max-width: 1140px;
+  }
+  @media screen and (min-width: $XXL) {
+    width: 100%;
+    max-width: 1320px;
+  }
+}

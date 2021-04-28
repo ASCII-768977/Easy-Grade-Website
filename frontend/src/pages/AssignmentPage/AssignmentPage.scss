@@ -1,0 +1,102 @@
+@import '../../assets/scss/variables';
+#root {
+  .assignment-page {
+    width: 100%;
+    min-height: 90vh;
+    h2 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .ant-tabs-tabpane-active {
+      height: auto;
+    }
+  }
+}
+
+.assignment-page__status {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  min-height: 215px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+  .assignment-status-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #d6d6d6;
+  }
+}
+
+.assignment-page__allocate {
+  min-height: 630px;
+  padding: 20px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.assignment-page__statistics {
+  height: 630px;
+
+  padding: 20px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+#root .assignment-page {
+  &__tabs {
+    > .ant-tabs > .ant-tabs-nav > .ant-tabs-nav-wrap {
+      .ant-tabs-tab {
+        background-color: white;
+        margin-right: 0;
+
+        &.ant-tabs-tab-active {
+          background-color: $blue-primary;
+          & .ant-tabs-tab-btn {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .ant-tabs-nav {
+    margin-bottom: 14px;
+  }
+  .ant-tabs-content-holder {
+    background-color: white;
+    border-radius: $default-radius;
+    padding: 16px 20px;
+  }
+}
+
+.assignment-page-s {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: $default-radius;
+
+  .assignment-desc {
+    max-width: 700px;
+  }
+  .assignment-desc__title {
+    font-weight: 500;
+  }
+
+  .ant-divider {
+    margin: 12px 0;
+  }
+  button {
+    margin-top: 20px;
+  }
+}

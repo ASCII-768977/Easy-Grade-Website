@@ -1,0 +1,85 @@
+.student-course-introduction {
+  min-width: 300px;
+  min-height: 213px;
+  max-height: 213px;
+  padding: 24px 30px;
+  font-family: Roboto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .course-introduction__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    margin-bottom: 1em;
+  }
+
+  .resources-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 1em;
+  }
+
+  .course-introduction__info {
+    max-height: 80px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 1em;
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: 3px;
+
+    a {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #828282;
+    }
+
+    .link-outlined {
+      margin-right: 5px;
+    }
+  }
+
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .entry-code {
+      display: flex;
+      align-items: center;
+
+      &__title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 1em;
+      }
+
+      &__code {
+        background-color: #ebf4fd;
+        border-radius: 8px;
+        min-width: 87px;
+        min-height: 30px;
+
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+
+    .duration {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 16px;
+      margin-right: 1em;
+    }
+  }
+}

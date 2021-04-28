@@ -1,0 +1,46 @@
+.courseDetails-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding-top: 20px;
+  h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+  .button-group {
+    margin-top: 20px;
+    .button-cancel {
+      margin-left: 20px;
+    }
+  }
+}
+
+.teacher-result {
+  margin-top: 20px;
+}
+
+.teacher-result > h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.teacher-result > h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.result-button {
+  margin-top: 20px;
+}
+
+.student-result > h2 {
+  font-size: 20px;
+  font-weight: 400;
+}

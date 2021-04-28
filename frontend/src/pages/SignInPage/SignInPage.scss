@@ -1,0 +1,53 @@
+@import '../../assets/scss/variables';
+
+.sign-in {
+  &-left__container {
+    width: 100%;
+    max-width: 360px;
+    margin: 80px auto;
+  }
+
+  &__logo-container {
+    text-align: center;
+    margin-bottom: 60px;
+
+    .sign-in__logo {
+      width: 260px;
+    }
+  }
+
+  form {
+    h2 {
+      font-size: 1rem;
+      line-height: 16px;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .form-email,
+    .form-password {
+      margin-bottom: 24px;
+    }
+
+    .form-sign-in {
+      margin-bottom: 10px;
+    }
+    .form-forgot {
+      text-align: center;
+
+      .sign-in-form-forgot {
+        color: $gray-blue;
+
+        &:hover {
+          color: $blue-primary;
+        }
+      }
+    }
+    .sign-in-form-button {
+      width: 100%;
+    }
+  }
+
+  .error-alert {
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../assets/scss/variables';
+
+.s-dashboard-layout {
+  .gutter-row > div {
+    background-color: $white-pure;
+    margin-bottom: 24px;
+    border-radius: $default-radius;
+  }
+}

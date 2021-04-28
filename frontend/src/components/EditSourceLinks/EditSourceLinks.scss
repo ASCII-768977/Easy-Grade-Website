@@ -1,0 +1,31 @@
+@import '../../assets/scss/variables';
+
+.ant-modal-root {
+  .edit-source-link-form {
+    &__container {
+      margin-top: 25px;
+      #edit_source_links_form {
+        .ant-space {
+          display: flex;
+          &-item {
+            &:first-child {
+              margin-right: 15px !important;
+            }
+          }
+        }
+        .edit-source-links-form__link {
+          min-width: 405px;
+        }
+        .ant-form-item {
+          margin-bottom: 15px;
+        }
+        .ant-input {
+          background-color: $gray-4;
+        }
+        .ant-btn-primary {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

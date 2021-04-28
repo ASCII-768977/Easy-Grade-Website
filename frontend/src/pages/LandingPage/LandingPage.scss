@@ -1,0 +1,273 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/media-queries';
+
+.landing-page section {
+  min-width: 960px;
+}
+
+.landing-nav {
+  background-color: $blue-primary;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 50;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 146px;
+    cursor: pointer;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+    ul {
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0 20px 0 0;
+
+      li {
+        color: $white-light;
+        padding: 4px 16px;
+        border-bottom: solid transparent 2px;
+        transition: border-bottom-color 0.2s ease-in, color 0.2s ease-in;
+
+        &:hover {
+          color: white;
+          border-bottom: solid white 2px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .ant-btn {
+      margin-left: 16px;
+    }
+  }
+}
+
+.landing-page .intro {
+  height: 580px;
+  display: flex;
+  align-items: center;
+
+  .container {
+    margin-bottom: 30px;
+  }
+  &__text {
+    h2 {
+      font-size: 56px;
+      line-height: 62px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 24px;
+    }
+    p {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.landing-page .dashboard-preview {
+  padding: 60px 0;
+  background-color: $gary-landing-bg;
+
+  &__img img {
+    width: 100%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 34px;
+    margin-bottom: 34px;
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.landing-page .process {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 85%;
+  }
+}
+
+.landing-page .features {
+  background-color: $gary-landing-bg;
+  padding: 80px 0;
+
+  &__top-text {
+    margin-bottom: 60px;
+    h2 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 34px;
+      margin-bottom: 34px;
+    }
+
+    p {
+      margin: 0 100px;
+      text-align: center;
+    }
+  }
+  .feature-card {
+    &__icon {
+      font-size: 50px;
+      color: $blue-primary;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.landing-page .girl-boy {
+  height: 300px;
+  background-color: $blue-primary;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    width: 580px;
+  }
+  .left-girl {
+    left: 0;
+  }
+  .right-boy {
+    right: 0;
+  }
+
+  div {
+    position: relative;
+    z-index: 10;
+    h3 {
+      font-size: 40px;
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      margin-top: 54px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.landing-page .teamwork {
+  padding: 100px 0;
+  background-color: $gary-landing-bg;
+
+  img {
+    width: 100%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 45px;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .ant-btn {
+    width: min-content;
+    background-color: white !important;
+  }
+}
+
+.landing-page .price {
+  height: 500px;
+}
+
+.landing-page .join {
+  position: relative;
+  background-color: $blue-primary;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 30px;
+    color: white;
+    margin-top: 110px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(0.9);
+    transform-origin: bottom;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+}

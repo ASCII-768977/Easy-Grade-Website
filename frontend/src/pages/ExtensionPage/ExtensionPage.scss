@@ -1,0 +1,20 @@
+.extension-page {
+  width: 100%;
+  min-height: 90vh;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+}

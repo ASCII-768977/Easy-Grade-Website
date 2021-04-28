@@ -1,0 +1,57 @@
+@import '../../assets/scss/variables';
+
+.ant-collapse-header {
+  color: #0050b3;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  font-size: 18px !important;
+}
+
+.course-container {
+  &-wrapper {
+    border-radius: $small-radius;
+    overflow: hidden;
+  }
+  &-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px, 3px, 0, 0;
+    background-color: #dde9f8;
+    height: 130px;
+    h2 {
+      padding-top: 30px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    p {
+      color: #7d7d7d;
+      font-size: 18px;
+    }
+  }
+  &-footer {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 0, 0, 3px, 3px;
+    background-color: $blue-light;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.action-container {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  .action-container-figure {
+    padding-top: 200px;
+  }
+  .action-container-title {
+    padding-top: 30px;
+  }
+}

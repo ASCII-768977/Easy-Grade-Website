@@ -1,0 +1,19 @@
+@import '../../assets/scss/variables';
+
+#root {
+  .base-assignment {
+    padding: 24px 30px;
+    min-height: 400px;
+    background: $white-pure;
+    border: 1px solid $gray-border !important;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    .ant-row-space-between {
+      align-items: center;
+      h3 {
+        white-space: nowrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../assets/scss/variables';
+
+#root {
+  .assignmentallocate-tab {
+    .ant-tabs-tab-btn[role='tab'] {
+      min-width: 60px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .ant-tabs {
+      max-height: 50px;
+      .ant-tabs-tab {
+        .ant-badge-count {
+          background-color: $gray-4;
+          color: $black-badge;
+        }
+      }
+      .ant-tabs-tab-active {
+        .ant-badge-count {
+          background-color: $blue-daybreak-1;
+          color: $blue-daybreak-6;
+        }
+      }
+    }
+  }
+}
+
+.ant-tabs-dropdown {
+  .ant-badge-count {
+    background-color: $gray-4;
+    color: $black-badge;
+  }
+}

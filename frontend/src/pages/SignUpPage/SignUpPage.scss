@@ -1,0 +1,41 @@
+@import '../../assets/scss/variables';
+
+.sign-up {
+  form {
+    .form-role {
+      div[role='alert'] {
+        text-align: right;
+      }
+      .form-role__header {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      font-size: 0.9rem;
+      line-height: 10px;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .sign-up-form-button {
+      width: 100%;
+    }
+    div[role='alert'] {
+      font-size: 13px;
+      line-height: 15px;
+      margin: 4px 0 10px 0;
+    }
+  }
+
+  .error-alert {
+    margin-bottom: 20px !important;
+  }
+  .link-signin {
+    text-align: center;
+    color: $blue-primary;
+    transition: color 0.5s ease;
+    &:hover {
+      color: $blue-light;
+    }
+  }
+}

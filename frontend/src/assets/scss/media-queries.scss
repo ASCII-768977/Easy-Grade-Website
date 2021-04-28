@@ -1,0 +1,35 @@
+$XS: 480px;
+$SM: 576px;
+$MD: 768px;
+$LG: 992px;
+$XL: 1200px;
+$XXL: 1600px;
+
+@mixin MQ($canvas) {
+  @if $canvas==XS {
+    @media screen and (max-width: $XS) {
+      @content;
+    }
+  }
+  @if $canvas==SM {
+    @media screen and (max-width: $SM) {
+      @content;
+    }
+  } @else if $canvas==MD {
+    @media screen and (max-width: $MD) {
+      @content;
+    }
+  } @else if $canvas==LG {
+    @media screen and (max-width: $LG) {
+      @content;
+    }
+  } @else if $canvas==XL {
+    @media screen and (max-width: $XL) {
+      @content;
+    }
+  } @else if $canvas==XXL {
+    @media screen and (max-width: $XXL) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+@import '../../assets/scss/variables';
+
+#root .main-nav {
+  width: 100px;
+  background-color: $blue-primary;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  .ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__top {
+    .main-nav__show-btn {
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+    .anticon-menu-fold {
+      font-size: 20px;
+      color: white;
+      position: absolute;
+      top: 40px;
+      left: 190px;
+      cursor: pointer;
+    }
+    &.main-nav-top-collapsed {
+      width: 60px;
+      margin: 0 auto;
+      .ant-menu-item {
+        img {
+          margin-left: 12px !important;
+        }
+      }
+      .main-nav__info {
+        width: 60px;
+        .main-nav__info-text {
+          opacity: 0;
+          visibility: hidden;
+          height: 10px;
+        }
+      }
+    }
+    .main-nav__info {
+      width: 200px;
+      margin: 0 auto 16px auto;
+      &.main-nav__info-border {
+        border-bottom: solid white 1px;
+      }
+      h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 16px;
+        color: white;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        color: $white-light;
+        opacity: 0.8;
+        margin-bottom: 16px;
+      }
+    }
+    .main-nav__logo {
+      span[role='img'] {
+        margin-left: 10px;
+        font-size: 20px;
+        color: white;
+        float: right;
+      }
+    }
+    .ant-menu {
+      padding-left: 2px;
+      display: flex;
+      align-items: center;
+      height: 100px;
+      .ant-menu-item {
+        width: min-content;
+        display: flex;
+        align-items: center;
+        img {
+          min-width: unset !important;
+          width: 30px;
+          margin-right: 6px;
+        }
+        span {
+          font-size: 26px;
+          line-height: 33px;
+          letter-spacing: -0.06em;
+          a {
+            color: white;
+          }
+        }
+      }
+      .ant-menu-item.ant-menu-item-selected {
+        background-color: $blue-primary !important;
+      }
+      .ant-menu-item.ant-menu-item-active {
+        background-color: $blue-primary;
+      }
+      &.ant-menu-inline-collapsed {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        height: 30px;
+        .ant-menu-item {
+          span[role='img'] {
+            font-size: 18px;
+            padding-left: 18px;
+          }
+        }
+      }
+      &.ant-menu-inline-collapsed .ant-menu-item img {
+        margin-left: 15px;
+      }
+    }
+  }
+  &__bottom {
+    .ant-menu-item {
+      height: 60px;
+      color: white;
+      display: flex;
+      align-items: center;
+      img {
+        width: 24px;
+        margin-top: -4px;
+        margin-left: 18px;
+      }
+      span {
+        font-size: 17px;
+        a {
+          color: white;
+        }
+      }
+      &-selected {
+        background-color: $blue-primary !important;
+      }
+      &-active {
+        background-color: $blue-primary !important;
+      }
+    }
+  }
+  .ant-menu {
+    width: 200px;
+    margin: 0 auto;
+    background-color: $blue-primary;
+    &.ant-menu-inline-collapsed {
+      width: 60px;
+    }
+  }
+  .ant-menu-item {
+    width: 100%;
+    padding-left: 0 !important;
+    border-radius: 4px;
+    background-color: $blue-primary;
+    margin: 0;
+
+    &.ant-menu-item-selected {
+      background-color: $blue-dark;
+    }
+    span[role='img'] {
+      padding-left: 21px;
+      font-size: 18px;
+      color: white;
+      & + span {
+        font-size: 16px;
+        color: white;
+      }
+    }
+    &-active {
+      background-color: $blue-light;
+    }
+  }
+}
+
+.main-nav .ant-popover-placement-topLeft {
+  left: 30px !important;
+  .ant-popover-title {
+    display: none !important;
+  }
+  .ant-popover-inner-content {
+    width: 140px;
+    padding: 0;
+  }
+  .ant-btn {
+    border: none;
+    width: 100%;
+    &.ant-btn-primary {
+      background-color: white !important;
+      color: black;
+      font-weight: 500;
+      text-align: left;
+      &:hover {
+        color: $blue-primary !important;
+      }
+    }
+  }
+}

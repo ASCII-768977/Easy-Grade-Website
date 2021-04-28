@@ -1,0 +1,34 @@
+.announcement-page {
+  .announcement-list {
+    min-height: 90vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+  }
+  h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+  .calendar-box {
+    width: 100%;
+    min-width: 292px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .announcement {
+    &__list--empty {
+      min-height: 700px;
+    }
+    Button {
+      float: right;
+    }
+  }
+}

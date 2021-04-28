@@ -1,0 +1,36 @@
+.assignment-wrapper > Form {
+  border-radius: 8px;
+  padding-top: 20px;
+  h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    .item-dueDate {
+      margin-left: 30px;
+    }
+  }
+  h3 > #update-file,
+  .update-file {
+    margin-bottom: 0px !important;
+    margin-left: 24px;
+  }
+  .assignment-wrapper-update {
+    margin-bottom: 24px !important;
+  }
+  .button-group {
+    margin-top: 20px;
+    .button-cancel {
+      margin-left: 20px;
+    }
+  }
+}
+
+.ant-form-item-control-input-content > textarea {
+  height: 240px !important;
+}

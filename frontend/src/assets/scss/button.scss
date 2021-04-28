@@ -1,0 +1,59 @@
+@import 'variables';
+
+#root {
+  .ant-btn {
+    &:hover {
+      color: $blue-primary;
+      border-color: $blue-primary;
+    }
+  }
+
+  .ant-btn.ant-btn-primary {
+    background-color: $blue-primary;
+    border: none;
+
+    &:hover {
+      color: white;
+      background-color: $blue-light;
+    }
+  }
+
+  .ant-btn.ant-btn--theme-gray {
+    color: $gray-blue;
+    background-color: $gray-blue-bg;
+    border: none;
+
+    &:hover {
+      color: $gray-blue-hover;
+      background-color: $gray-blue-bg-hover;
+    }
+  }
+
+  .ant-radio-button-wrapper {
+    .ant-radio-button {
+      background-color: $blue-primary;
+    }
+  }
+
+  .ant-btn.ant-btn-ghost--theme-white {
+    color: white;
+    border: white solid 1px;
+
+    &:hover {
+      background-color: white;
+      color: $blue-primary;
+    }
+  }
+}
+
+.ant-modal-body {
+  .ant-btn.ant-btn-primary {
+    background-color: $blue-primary;
+    border: none;
+
+    &:hover {
+      color: white;
+      background-color: $blue-light;
+    }
+  }
+}

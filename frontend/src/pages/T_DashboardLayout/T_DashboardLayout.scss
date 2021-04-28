@@ -1,0 +1,8 @@
+@import '../../assets/scss/variables';
+
+.t-dashboard-layout {
+  .gutter-row > div {
+    background-color: $white-pure;
+    border-radius: $default-radius;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../assets/scss/variables';
+
+#root {
+  .roster-table {
+    .ant-dropdown-trigger {
+      display: inline-block;
+      min-width: 80px;
+    }
+    .ant-table {
+      min-height: calc(90vh - 150px);
+    }
+  }
+}

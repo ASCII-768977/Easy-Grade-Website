@@ -1,0 +1,19 @@
+@import '../../assets/scss/variables';
+
+.course-wrapper {
+  padding: 24px 30px;
+  min-height: 900px;
+  background-color: $white-pure;
+  border-radius: $default-radius;
+}
+.course-wrapper-header {
+  font-weight: 500;
+  font-size: 24px;
+}
+.create-course-btn {
+  text-align: right;
+  vertical-align: middle;
+}
+.course-wrapper-body {
+  margin-top: 30px;
+}

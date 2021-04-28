@@ -1,0 +1,17 @@
+@import '../../assets/scss/variables';
+
+#root {
+  .site-calendar-customize-header-wrapper {
+    width: 300px;
+    border: 1px solid $gray-4;
+    border-radius: 2px;
+  }
+  .ant-picker-content {
+    > thead {
+      border-bottom: 1px solid $gray-4;
+      > tr > th {
+        padding-bottom: 8px;
+      }
+    }
+  }
+}

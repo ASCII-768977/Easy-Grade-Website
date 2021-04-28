@@ -1,0 +1,43 @@
+@import '../../assets/scss/variables';
+
+#root {
+  .announcement {
+    padding: 24px 30px;
+    min-height: 500px;
+    .header-layout {
+      width: 100%;
+      margin-bottom: 15px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      text-align: center;
+      .announcement__title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .postion-up-right {
+        float: right;
+      }
+    }
+    &__list {
+      a {
+        color: $blue-primary;
+      }
+      &--empty {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > p {
+          margin-top: 30px;
+          font-weight: 500;
+        }
+      }
+      .abbv-date {
+        line-height: 30px;
+      }
+    }
+  }
+}

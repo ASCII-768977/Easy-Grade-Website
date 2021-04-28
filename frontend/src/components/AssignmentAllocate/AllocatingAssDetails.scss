@@ -1,0 +1,57 @@
+@import '../../assets/scss/variables';
+
+.allocating-header {
+  padding-top: 20px;
+  .allocating-header-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .allocating-header,
+  h2 {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.button-group {
+  margin-top: 20px;
+  .button-cancel {
+    margin-left: 14px;
+  }
+}
+
+.button-group.button-group-allocate {
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  .table-header {
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #fafafa;
+    .table-header-title {
+      width: 25%;
+    }
+  }
+  .table-body,
+  .table-body-item > td {
+    line-height: 46px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .table-body-newAllocated {
+    color: $blue-light;
+  }
+}
+
+.allocating-body .ant-form-item {
+  margin-bottom: 0;
+}
